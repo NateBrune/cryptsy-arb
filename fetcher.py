@@ -5,8 +5,8 @@ ttc = 5
 
 lastFetchTime = 0
 
-cryptsy_pubkey = '45a04147f44cc0d2be0fadb60cf21255c067f87d'
-cryptsy_privkey = '61f0e4bd5eaf6848fcbfb6fc077a4aeedebbc8fca3ac8851df73fe289b0d7481f2c731120bddbfd6'
+cryptsy_pubkey = 'PUBLIC KEY HERE'
+cryptsy_privkey = 'PRIVATE KEY HERE'
 def fetchMarketData():
     global lastFetchTime
     global cryptsy_pubkey
