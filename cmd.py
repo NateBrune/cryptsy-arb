@@ -25,8 +25,8 @@ if len(sys.argv) == 3:
 else:
 	verb = 'n'
 
-#.6% total fees (usually less)
-fee_ratio = 0.008
+#1% total fees (usually less)
+fee_ratio = 0.01
 def makemoney():
 	simpleArb       = []
 	ltcMarkets      = []
