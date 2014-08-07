@@ -13,7 +13,7 @@ try:
 	server.ehlo()
 	server.starttls()
 	server.ehlo()
-	server.login("natebrune@gmail.com", "Wolfer3779")
+	server.login("Your gmail here!", "Your Password")
 except:
 	pass
 if len(sys.argv) == 2:
@@ -187,7 +187,7 @@ def makemoney():
 				a = ret.read()
 				message = 'Subject: %s\n\n%s' % ("I just made: $"+ str(float(total_profit)*float(json.loads(a)[0]['rate'])), str(data['outstr']))
 				try:
-					server.sendmail("natebrune@gmail.com", "drewbrune@gmail.com", message)
+					server.sendmail("FROM", "TO", message)
 				except:
 					pass
 				fetcher.cancelOrder(r['orderid'])
