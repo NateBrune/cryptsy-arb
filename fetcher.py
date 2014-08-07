@@ -1,14 +1,12 @@
 import time
 import Cryptsy
-
 #time to hold in cache, in seconds - this only applies for google AppEngine
 ttc = 5
 
 lastFetchTime = 0
 
-cryptsy_pubkey = 'YOUR_PUBLIC_KEY'
-cryptsy_privkey = 'YOUR_PRIVATE_KEY'
-
+cryptsy_pubkey = '45a04147f44cc0d2be0fadb60cf21255c067f87d'
+cryptsy_privkey = '61f0e4bd5eaf6848fcbfb6fc077a4aeedebbc8fca3ac8851df73fe289b0d7481f2c731120bddbfd6'
 def fetchMarketData():
     global lastFetchTime
     global cryptsy_pubkey
@@ -23,8 +21,8 @@ def fetchMarketData():
             if marketData['success'] == 1:
                 lastFetchTime = time.time()
         except:
-            fetchMarketData()
-        
+            #fetchMarketData()
+            raise("I do not know what to tell you man...")
 def getLTCPrice():
     global cryptsyHandle
     cryptsyHandle = Cryptsy.Cryptsy(cryptsy_pubkey, cryptsy_privkey)
@@ -47,3 +45,6 @@ def placeOrder(marketid, ordertype, quantity, price):
 
 def getCachedTime():
     return (time.time() - lastFetchTime) > ttc
+
+def cancelOrder(orderid):
+    return cryptsyHandle.cancelOrder(orderid)
