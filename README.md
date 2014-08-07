@@ -29,8 +29,8 @@ There is not much money to be made on this exchange... perhaps because of this s
 
 I am happy to receive your donations! 
 
-BTC:
-1MNiLXKDfQwMvKq1LD8xPttmufqnWtXvmW
+My BTC:                1MNiLXKDfQwMvKq1LD8xPttmufqnWtXvmW
+Original creator BTC:  1PJTKx1N7yssPNo1URsQt9AsL3KPcTSnN7
 
 I hope you use this script as reference on your way to becoming bitrich, good luck!
 
